@@ -36,7 +36,7 @@
         var els = [].slice.call(document.getElementsByTagName('script'));
 
         for (var i = 0, i_ = els.length; i < i_; i++){
-            if (els.className === SCRIPT_CLASS){
+            if (els[i].className === SCRIPT_CLASS){
                 return true;
             }
         }
