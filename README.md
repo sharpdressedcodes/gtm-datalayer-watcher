@@ -1,5 +1,7 @@
 ### Google Tag Manager DataLayer Watcher
-#### v1.2
+#### v1.3
+
+This will watch the DataLayer and log new items in the console as they are added.
 
 Download and install the [Add-On SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation)
 

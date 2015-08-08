@@ -2,11 +2,12 @@
   "name": "gtm-datalayer-watcher",
   "title": "GTM DataLayer Watcher",
   "id": "jid1-nSSqfNc0J9rjnQ",
-  "description": "This will watch the DataLayer and log new items to the console as they are pushed.",
+  "description": "This will watch the DataLayer and log new items in the console as they are added.",
   "author": "Greg Kappatos (http://websiteconnect.com.au/)",
   "homepage": "http://websiteconnect.com.au/",
   "license": "MPL 2.0",
-  "version": "1.2",
+  "version": "1.3",
+  "permissions": {"private-browsing": true},
   "icon": "data/gtm-datalayer-watcher-48.png",
   "icon64": "data/gtm-datalayer-watcher-64.png"
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 (function(){
 
     const SCRIPT_CLASS = 'gtm-datalayer-watcher';
@@ -47,10 +49,10 @@
 
     function loadScript(){
 
-        if (!isScriptLoaded()){
+        if (!isScriptLoaded() && typeof document.head !== 'undefined'){
             var code = "\
     (function(){\
-\
+        'use strict';\
         var ConsoleRestorer = function(){\
 \
         this.console = null;\

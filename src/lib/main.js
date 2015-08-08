@@ -1,3 +1,5 @@
+'use strict';
+
 var tabs = require('sdk/tabs');
 var self = require('sdk/self');
 var worker = null;
@@ -24,17 +26,17 @@ tabs.on('ready', function(tab){
 
 exports.main = function(options, callbacks){
 
-    if (worker !== null && loadReasons.indexOf(options.loadReason) > -1){
-        worker.port.emit('load');
-    }
+    //if (worker !== null && loadReasons.indexOf(options.loadReason) > -1){
+    worker && worker.port.emit('load');
+    //}
 
 };
 
 exports.onUnload = function(reason){
 
-    if (worker !== null && unloadReasons.indexOf(reason) > -1){
-        worker.port.emit('unload');
-    }
+    //if (worker !== null && unloadReasons.indexOf(reason) > -1){
+    worker && worker.port.emit('unload');
+    //}
 
 };
 
